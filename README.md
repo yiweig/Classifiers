@@ -10,12 +10,12 @@ Supported classifiers:
 *Laplacian correction = [additive smoothing](http://en.wikipedia.org/wiki/Additive_smoothing)
   
 
-To compile:
+Compilation:
   
         javac HWThree.java  
     
     
-To run: 
+Usage: 
  
         java HWThree [-option] [training_data] [test_data] [index_of_class_label] [-l]
         
