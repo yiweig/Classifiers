@@ -9,7 +9,7 @@ Supported classifiers:
 4. Naive Bayesian classifier without Laplacian correction*  
 
 
-*Laplacian correction = [additive smoothing](http://en.wikipedia.org/wiki/Additive_smoothing)
+    *Laplacian correction = [additive smoothing](http://en.wikipedia.org/wiki/Additive_smoothing)
   
 
 To compile:
