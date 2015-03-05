@@ -30,7 +30,8 @@ Usage:
     Note: training and test data must be in the same directory as the program files!
     
     
-**mushroom.training** and **mushroom.test** data are compiled from their [original source](http://archive.ics.uci.edu/ml/datasets/Mushroom) located at the UCI Machine Learning Repository
+**mushroom.training** and **mushroom.test** data are compiled from their [original source](http://archive.ics.uci.edu/ml/datasets/Mushroom) located at the UCI Machine Learning Repository,
+with attribute 11 removed because of missing values. Class labels (poisonous "p" or edible "e") are the first attribute (index = 0).
 
 **textbook.txt** is data from the class textbook, page 338 of *Data Mining: Concepts and Techniques, Third Edition*, by Han, Kamber, and Pei.  
 **test.txt** contains one line that represents a tuple that needs to be classified. This tuple was personally created, with some influence from the test tuples from the textbook.
