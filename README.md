@@ -5,7 +5,7 @@ Supported classifiers:
 
 * ID3 decision tree
 * C4.5 decision tree
-* Naive Bayesian classifier without Laplacian correction
+* Naive Bayesian classifier without Laplacian correction (aka [additive smoothing](http://en.wikipedia.org/wiki/Additive_smoothing))
 * Naive Bayesian classifier with Laplacian correction
   
 
