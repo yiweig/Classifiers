@@ -3,7 +3,11 @@
 
 Supported classifiers: 
 
-ID3 and C4.5 decision treess, along with Naive Bayesian with and without Laplacian Correction  
+* ID3 decision tree
+* C4.5 decision tree
+* Naive Bayesian classifier without Laplacian correction
+* Naive Bayesian classifier with Laplacian correction
+  
 
 To compile:
   
