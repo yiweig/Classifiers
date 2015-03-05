@@ -1,4 +1,4 @@
-Classifiers for CS 378 Data Mining  
+# Classifiers for CS 378 Data Mining  
 
 Supported classifiers: 
 
