@@ -27,3 +27,6 @@ To run:
             -i   use ID3
     
     Note: training and test data must be in the same directory as the program files!
+    
+    
+Mushroom.training and mushroom.test data are compiled from their [original source](http://archive.ics.uci.edu/ml/datasets/Mushroom) located at the UCI Machine Learning Repository
