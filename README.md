@@ -27,6 +27,12 @@ Usage:
             -c   use C4.5
             -i   use ID3
     
+    Example usages:
+        java HWThree -b mushroom.training mushroom.test 0 -l
+        java HWThree -b mushroom.training mushroom.test 0
+        java HWThree -c mushroom.training mushroom.test 0
+        java HWThree -i mushroom.training mushroom.test 0
+    
     Note: training and test data must be in the same directory as the program files!
     
     

@@ -106,7 +106,7 @@ public class HWThree {
                 "\t\t-c\t use C4.5" +
                 "\n" +
                 "\t\t-i\t use ID3");
-        System.out.println("Examples: " +
+        System.out.println("\nExample usages: " +
                 "\n\tjava HWThree -b mushroom.training mushroom.test 0 -l" +
                 "\n\tjava HWThree -b mushroom.training mushroom.test 0" +
                 "\n\tjava HWThree -c mushroom.training mushroom.test 0" +
