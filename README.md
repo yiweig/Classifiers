@@ -34,4 +34,7 @@ Usage:
 with attribute 11 removed because of missing values. Class labels (poisonous "p" or edible "e") are the first attribute (index = 0).
 
 **textbook.txt** is data from the class textbook, page 338 of *Data Mining: Concepts and Techniques, Third Edition*, by Han, Kamber, and Pei.  
-**test.txt** contains one line that represents a tuple that needs to be classified. This tuple was personally created, with some influence from the test tuples from the textbook.
+**test.txt** contains one line that represents a tuple that needs to be classified. This tuple was personally created, with some influence from the test tuples from the textbook.  
+
+### Known Issues  
+- The C4.5 decision tree is not pruned, meaning that outliers and/or noisy data will sometimes result in [overfitting](http://en.wikipedia.org/wiki/Overfitting). 
