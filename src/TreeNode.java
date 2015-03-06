@@ -77,7 +77,7 @@ public class TreeNode {
         NUMBER_OF_ATTRIBUTES = this.trainingData.get(0).length;
 
         if (indexOfClassLabel < 0 || indexOfClassLabel > NUMBER_OF_ATTRIBUTES) {
-            HWThree.argumentError();
+            HWThree.inputError();
         }
 
         ALL_ATTRIBUTES = new ArrayList<List<Character>>();

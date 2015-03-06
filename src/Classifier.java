@@ -49,7 +49,7 @@ public class Classifier {
 
     // tests the classifier, depending on if its a decision tree or Bayesian
     public void test() {
-        if (type == Type.BAYES || type == Type.BAYES_WITH_LAPLACIAN) {
+        if (type == Type.BAYES || type == Type.BAYES_WITH_LAPLACE) {
             testBayes();
         } else {
             testTree();
@@ -133,10 +133,10 @@ public class Classifier {
 
     // tests Bayesian classifier
     private void testBayes() {
-        bayes.test(type == Type.BAYES_WITH_LAPLACIAN);
+        bayes.test(type == Type.BAYES_WITH_LAPLACE);
     }
 
     public enum Type {
-        ID3, C45, BAYES, BAYES_WITH_LAPLACIAN
+        ID3, C45, BAYES, BAYES_WITH_LAPLACE
     }
 }
