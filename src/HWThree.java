@@ -18,19 +18,18 @@ public class HWThree {
     public static Classifier.Type type = Classifier.Type.C45;
 
     public static void main(String[] args) throws IOException {
-
-
+        
         // validates input
         if (args.length == 0) {
             Classifier defaultClassifier = new Classifier(type, trainingData, testData, indexOfClassLabel);
             defaultClassifier.print();
             defaultClassifier.test();
         } else if (args.length == 4) {
-            readInput(args, false);
+            readArguments(args, false);
         } else if (args.length == 5 && args[4].equals("-l")) {
-            readInput(args, true);
+            readArguments(args, true);
         } else {
-            inputError();
+            argumentError();
         }
 
         Classifier classifier = new Classifier(type, trainingData, testData, indexOfClassLabel);
@@ -43,7 +42,8 @@ public class HWThree {
         classifier.test();
     }
 
-    public static void readInput(String[] args, boolean usingLaplace) {
+    // reads in arguments
+    public static void readArguments(String[] args, boolean usingLaplace) {
         trainingData = args[1];
         testData = args[2];
         indexOfClassLabel = Integer.parseInt(args[3]);
@@ -58,7 +58,7 @@ public class HWThree {
         } else if (args[0].equals("-i")) {
             type = Classifier.Type.ID3;
         } else {
-            inputError();
+            argumentError();
         }
     }
 
@@ -101,8 +101,8 @@ public class HWThree {
     }
 
     // called when arguments are incorrect
-    public static void inputError() {
-        System.out.println("Input error!");
+    public static void argumentError() {
+        System.out.println("Argument error!");
         System.out.println("Usage: \n\tjava HWThree [-option] [training_data] [test_data] [index_of_class_label] [-l]");
         System.out.println("\t0 <= 'index_of_class_label' < total number of attributes");
         System.out.println("\tDefault behavior is to run the dataset from the textbook using C4.5");
