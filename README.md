@@ -37,4 +37,4 @@ with attribute 11 removed because of missing values. Class labels (poisonous "p"
 **test.txt** contains one line that represents a tuple that needs to be classified. This tuple was personally created, with some influence from the test tuples from the textbook.  
 
 ### Known Issues  
-- The C4.5 decision tree is not pruned, meaning that outliers and/or noisy data will sometimes result in [overfitting](http://en.wikipedia.org/wiki/Overfitting). 
+- The decision tree algorithm does not currently implement [pruning](http://en.wikipedia.org/wiki/Pruning_%28decision_trees%29), meaning that outliers and/or noisy data will sometimes result in [overfitting](http://en.wikipedia.org/wiki/Overfitting). 
