@@ -18,18 +18,26 @@ public class HWThree {
     public static Classifier.Type type = Classifier.Type.C45;
 
     public static void main(String[] args) throws IOException {
-        
+
         // validates input
-        if (args.length == 0) {
-            Classifier defaultClassifier = new Classifier(type, trainingData, testData, indexOfClassLabel);
-            defaultClassifier.print();
-            defaultClassifier.test();
-        } else if (args.length == 4) {
-            readArguments(args, false);
-        } else if (args.length == 5 && args[4].equals("-l")) {
-            readArguments(args, true);
-        } else {
-            argumentError();
+        switch (args.length) {
+            case 0:
+                Classifier defaultClassifier = new Classifier(type, trainingData, testData, indexOfClassLabel);
+                defaultClassifier.print();
+                defaultClassifier.test();
+                break;
+            case 4:
+                readArguments(args, false);
+                break;
+            case 5:
+                if (args[4].equals("-l")) {
+                    readArguments(args, true);
+                } else {
+                    readArguments(args, false);
+                }
+                break;
+            default:
+                argumentError();    
         }
 
         Classifier classifier = new Classifier(type, trainingData, testData, indexOfClassLabel);
