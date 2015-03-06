@@ -97,11 +97,11 @@ public class HWThree {
     // called when arguments are incorrect
     public static void argumentError() {
         System.out.println("Argument error!");
-        System.out.println("Usage: \n\tjava HWThree [-option] [trainin_data] [test_data] [index_of_class_label] [-l]");
+        System.out.println("Usage: \n\tjava HWThree [-option] [training_data] [test_data] [index_of_class_label] [-l]");
         System.out.println("\t0 <= 'index_of_class_label' < total number of attributes");
         System.out.println("\tDefault behavior is to run the dataset from the textbook using C4.5");
         System.out.println("\tOptions:\n" +
-                "\t\t-b\t use Bayes" + "  ...  -l use Laplacian correction" +
+                "\t\t-b\t use Bayes" + "  ...  -l use Laplace smoothing" +
                 "\n" +
                 "\t\t-c\t use C4.5" +
                 "\n" +

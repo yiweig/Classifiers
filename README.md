@@ -3,11 +3,11 @@
 
 Supported classifiers: 
 
-1. ID3 decision tree
-2. C4.5 decision tree
-3. Naive Bayesian classifier with Laplacian correction\*  
-4. Naive Bayesian classifier without Laplacian correction\*  
-\* Laplacian correction == Laplace smoothing == [additive smoothing](http://en.wikipedia.org/wiki/Additive_smoothing)
+1. [ID3](http://en.wikipedia.org/wiki/ID3_algorithm) decision tree
+2. [C4.5](http://en.wikipedia.org/wiki/C4.5_algorithm) decision tree
+3. [Naive Bayes](http://en.wikipedia.org/wiki/Naive_Bayes_classifier) classifier with Laplace smoothing\*  
+4. Naive Bayes classifier without Laplace smoothing\*  
+\* Laplace smoothing == Laplacian correction == [additive smoothing](http://en.wikipedia.org/wiki/Additive_smoothing)
   
 
 Compilation:
@@ -23,7 +23,7 @@ Usage:
     Default behavior is to run the dataset from the textbook using the C4.5 decision tree
     
         Options:
-            -b   use Bayes  ...  -l use Laplacian correction
+            -b   use Bayes  ...  -l use Laplace smoothing
             -c   use C4.5
             -i   use ID3
     
