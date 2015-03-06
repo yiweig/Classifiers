@@ -36,5 +36,5 @@ with attribute 11 removed because of missing values. Class labels (poisonous "p"
 **textbook.txt** is data from the class textbook, page 338 of *Data Mining: Concepts and Techniques, Third Edition*, by Han, Kamber, and Pei.  
 **test.txt** contains one line that represents a tuple that needs to be classified. This tuple was personally created, with some influence from the test tuples from the textbook.  
 
-### Known Issues  
+## Known Issues  
 - The decision tree algorithm does not currently implement [pruning](http://en.wikipedia.org/wiki/Pruning_%28decision_trees%29), meaning that outliers and/or noisy data will sometimes result in [overfitting](http://en.wikipedia.org/wiki/Overfitting). 
