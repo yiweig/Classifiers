@@ -162,7 +162,6 @@ public class TreeNode {
                     indexOfAttribute = currentAttribute;
                 }
             }
-
 //            System.out.println(gain);
 //            System.out.println(splitInfo);
 //            System.out.println(gainRatio + " -> " + currentAttribute);
@@ -301,7 +300,7 @@ public class TreeNode {
         return majority;
     }
 
-    // custom log2 method
+    // custom log2 method; if 0, returns 0 rather than NaN
     private double log2(double value) {
         return value == 0 ? 0 : (Math.log10(value) / DIVISOR);
     }
