@@ -32,7 +32,11 @@ public class HWThree {
             if (args[0].equals("-b")) {
                 type = Classifier.Type.BAYES;
                 if (args.length == 5) {
-                    type = args[4].equals("-l") ? Classifier.Type.BAYES_WITH_LAPLACIAN : Classifier.Type.BAYES;
+                    if (args[4].equals("-l")) {
+                        type = Classifier.Type.BAYES_WITH_LAPLACIAN;
+                    } else {
+                        argumentError();
+                    }
                 }
             } else if (args[0].equals("-c")) {
                 type = Classifier.Type.C45;
