@@ -1,5 +1,5 @@
 # Classifiers for CS 378 Data Mining  
-### (Homework 3 | Java)
+### (Homework 3 | Implemented in Java)
 
 Supported classifiers: 
 
